@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import cx_Oracle
-from DATA import db_user, db_password, db_dsn, db_encoding 
+from DATA import db_user, db_password, db_dsn, db_encoding
 app = Flask(__name__)
 
 @app.route('/')
@@ -25,4 +25,16 @@ def hijo():
 
 @app.route('/padre.html')
 def padre():
+    
+    with cx_Oracle.connect(
+            user=db_user,
+            password=db_password,
+            dsn=db_dsn,
+            encoding=db_encoding
+        ) as conn:
+        cursor = conn.cursor()
+        cursor.execute("select * from padre")
+        data = cursor.fetchall()
+        headings = [row[0] for row in cursor.description]
+    
     return render_template("padre.html")
