@@ -1,0 +1,85 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    background-attachment: fixed, scroll;
+}
+.titulo{
+    font-size: 64px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(226, 121, 0);
+}
+a{
+    color: rgb(223, 159, 22);
+    font-family: 'Rubik', sans-serif;
+}
+li{
+    font-family: 'Rubik', sans-serif;
+}
+ul{
+    list-style-type: square;
+}
+.contenedor{
+    margin: 20 auto;
+    width: 400px;
+    padding: 30px;
+    float: left;
+    background: rgba(0,0,0, .5);
+    border-radius: 15px;
+}
+
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.contenedor .elemento label{
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contenedor .elemento input{
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contenedor .elemento input[type="submit"]{
+    background-color: #e49400;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+a.Boton{
+    color: #e49400;
+    text-decoration: none;
+    font-size: 16px;
+}

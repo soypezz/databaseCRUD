@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Taller #3</title>
+    <link href="{{ url_for('static',filename='styles/stylePadre.css') }}" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button><a href="index.html" class="Boton">← Volver</a></button>
+    <h1 class="titulo">Padre</h1>
+    <div class="contenedor">
+        <form id="formulario" name="formulario" method="POST">
+            <div class="elemento">
+                <label for="nombre_hijo">Nombre</label>
+                <input type="text" id="nombre_hijo" name="nombre_hijo" required="true"/>
+            </div>
+            <div class="elemento">
+                <label for="id_padre">ID del padre</label>
+                <input type="text" id="id_padre" name="id_padre" required="true"/>
+            </div>
+            <div class="elemento">
+                <input type="submit" value="Ingresar"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

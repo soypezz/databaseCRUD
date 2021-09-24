@@ -1,0 +1,30 @@
+body{
+    background: whitesmoke;
+    background-attachment: fixed, scroll;
+    
+}
+.titulo{
+    font-size: 64px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(0, 100, 13);
+}
+a{
+    color: rgb(0, 104, 9);
+    font-family: 'Rubik', sans-serif;
+}
+li{
+    font-family: 'Rubik', sans-serif;
+}
+ul{
+    list-style-type: square;
+}
+li a{
+    text-align: left;
+    padding: 2px;
+    margin: 2px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(190, 190, 190);
+}
