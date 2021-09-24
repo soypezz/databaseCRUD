@@ -37,4 +37,24 @@ def padre():
         data = cursor.fetchall()
         headings = [row[0] for row in cursor.description]
     
-    return render_template("padre.html")
+    return render_template("padre.html", headings=headings, data=data)
+
+@app.route('/consulta1.html')
+def consulta1():
+    
+    return render_template("consulta1.html")
+
+@app.route('/consulta2.html')
+def consulta2():
+    
+    return render_template("consulta2.html")
+
+@app.route('/consulta3.html')
+def consulta3():
+    
+    return render_template("consulta3.html")
+
+@app.route('/consulta4.html')
+def consulta4():
+    
+    return render_template("consulta4.html")
