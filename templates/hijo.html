@@ -15,7 +15,7 @@
     <button><a href="http://127.0.0.1:5000/" class="Boton">← Volver</a></button>
     <h1 class="titulo">Hijo</h1>
     <div class="contenedor">
-        <form id="formulario" name="formulario" method="POST">
+        <form id="formulario" name="formulario" method="POST" action="/create-hijo">
             <div class="elemento">
                 <label for="id_hijo">ID</label>
                 <input type="text" id="id_hijo" name="id_hijo" required="true"/>
@@ -44,6 +44,7 @@
             {% for cell in row %}
             <td class="table_cell">{{ cell }}</td>
             {% endfor %}
+            <td class="table_cell"><a href="/deleteHijo/{{row[0]}}" class="btn btn-danger btn-sn">Delete</a></td>
         </tr>
         {% endfor %}
     </table>
